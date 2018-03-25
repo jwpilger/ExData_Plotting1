@@ -6,7 +6,7 @@ downloadfile <- function(Url_download,script_name,proj_folder)
     rc_df[1,3] <- ""
     colnames(rc_df) <- c("RC","File","Project Folder")
     
-    zip_file <- paste(script_name,"-download",sep="")
+    zip_file <- paste(proj_folder,"-download",sep="")
     folder_path <- paste("./",proj_folder,sep="")
     unzip_file <- file.path(folder_path,paste(proj_folder,"-data",sep=""))
     download_zipfile <- file.path(folder_path,paste(zip_file,".zip",sep=""))
@@ -23,6 +23,7 @@ downloadfile <- function(Url_download,script_name,proj_folder)
       
     }
     rc_df[1,3] <- folder_path
+    log(script_name,"Using project file folder: ",folder_path)
     
     if(!file.exists(download_zipfile)){   # download .zip file if not exists
         log(script_name,"downloading file: ",Url_download)
