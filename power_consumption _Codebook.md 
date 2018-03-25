@@ -1,0 +1,26 @@
+#Coursera Exploratory Data Analysis course project
+##R script: power_consumption.R Author: John Pilger Date: Sun Mar 25 07:38:30 2018
+##Individual household electric power consumption 
+##1] Download power consumption files using downloadfile function 
+##Coursera Exploratory Data Analysis course project
+##Using working directory path: /Users/jpilger/Documents/Coursera Data Science Specialization/R files
+###project file folder created: ./Power_Consumption
+###downloading file: https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip
+###Download Complete Duration: 1.8625 secs 
+###File size (MB): 19.68471
+###writing downloaded file: ./Power_Consumption/power_consumption-download.zip
+###zip file extracted to folder: ./Power_Consumption/Power_Consumption-data
+###processing only file in zip folder: household_power_consumption.txt
+###ready to process filename: ./Power_Consumption/Power_Consumption-data/household_power_consumption.txt
+###Projected size of power_data object frame (MB): 142.4967
+##2] Create data frame, calculate power consumption object space required 
+###Power consumption data raw data rows: 2075259
+###Power consumption data raw data frame size (MB): 142.6523
+##3] Select raw data input by date filter 2007-02-01 to 2007-02-02
+###Power consumption data (subset) rows after date selection: 2880
+##4] Data prep complete - ready for visualization 
+##5] ./Power_Consumption/plot1.png complete and written to project folder
+##6] ./Power_Consumption/plot2.png complete and written to project folder
+##7] ./Power_Consumption/plot3.png complete and written to project folder
+##8] ./Power_Consumption/plot4.png complete and written to project folder
+##9] Project complete
